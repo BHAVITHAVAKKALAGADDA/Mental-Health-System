@@ -14,55 +14,54 @@ const Subheader = () => {
           <li className="dropdown">
             <button className="dropdown-button">About us</button>
             <div className="dropdown-content">
-              <a href="/assessment-1">Assessment 1</a>
-              <a href="/assessment-2">Assessment 2</a>
-              <a href="/assessment-3">Assessment 3</a>
+              <a href="/Programmes">Programmes</a>
+              <a href="/PublicEngagement">Public Engagement</a>
+              <a href="/Research">Research</a>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropdown-button">Mental Health Assessment</button>
             <div className="dropdown-content">
-              <a href="/assessment-1">Assessment 1</a>
-              <a href="/assessment-2">Assessment 2</a>
-              <a href="/assessment-3">Assessment 3</a>
+              <a href="/PublicEngagement">Assessment 1</a>
+              <a href="/Programmes">Assessment 2</a>
+              <a href="/Research">Assessment 3</a>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropdown-button">Resource Center</button>
             <div className="dropdown-content">
-              <a href="/resource-1">Resource 1</a>
-              <a href="/resource-2">Resource 2</a>
-              <a href="/resource-3">Resource 3</a>
+              <a href="/Research">Resource 1</a>
+              <a href="/PublicEngagement">Resource 2</a>
+              <a href="/Programmes">Resource 3</a>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropdown-button">Community Forum</button>
             <div className="dropdown-content">
-              <a href="/forum-1">Forum 1</a>
-              <a href="/forum-2">Forum 2</a>
-              <a href="/forum-3">Forum 3</a>
+              <a href="/Programmes">Forum 1</a>
+              <a href="/Research">Forum 2</a>
+              <a href="/PublicEngagement">Forum 3</a>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropdown-button">Journaling</button>
             <div className="dropdown-content">
-              <a href="/journaling-1">Journaling 1</a>
-              <a href="/journaling-2">Journaling 2</a>
-              <a href="/journaling-3">Journaling 3</a>
+              <a href="/Programmes">Journaling 1</a>
+              <a href="/PublicEngagement">Journaling 2</a>
+              <a href="/Research">Journaling 3</a>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropdown-button">Mindfulness & Meditation</button>
             <div className="dropdown-content">
-              <a href="/meditation-1">Meditation 1</a>
-              <a href="/meditation-2">Meditation 2</a>
-              <a href="/meditation-3">Meditation 3</a>
+              <a href="/Research">Meditation 1</a>
+              <a href="/Programmes">Meditation 2</a>
+              <a href="/PublicEngagement">Meditation 3</a>
             </div>
           </li>
         </ul>
       </nav>
       <div className="right-corner">
-        <a href="/Signup" className="login-signup-btn">Login/Signup</a>
         <a href="/Profile">Profile</a>
       </div>
     </div>

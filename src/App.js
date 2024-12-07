@@ -6,6 +6,10 @@ import HomePage from './components/HomePage'; // Replace with your actual home p
 import Signup from './components/Signup'; // Ensure the correct path
 import Login from './components/Login';
 import Profile from './components/Profile';
+import AdminPage from './components/Admin';
+import Programmes from './components/Programmes';
+import PublicEngagement from './components/PublicEngagement';
+import Research from './components/Research';
 
 function App() {
   return (
@@ -17,6 +21,11 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/admin" element={<AdminPage />} />
+          <Route path="/programmes" element={<Programmes />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/publicengagement" element={<PublicEngagement />} />
+
         </Routes>
         <Footer />
       </div>

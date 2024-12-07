@@ -26,13 +26,58 @@ const Signup = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  // Validate form data
+  const validateForm = () => {
+    // Password validation: min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+    if (!passwordRegex.test(formData.password)) {
+      setMessage("Password must be at least 8 characters, include 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.");
+      return false;
+    }
+
+    // Confirm password validation
+    if (formData.password !== formData.confirmPassword) {
+      setMessage("Passwords do not match.");
+      return false;
+    }
+
+    // Phone number validation (must be 10 digits)
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(formData.phone)) {
+      setMessage("Phone number must be 10 digits.");
+      return false;
+    }
+
+    // Date of birth validation (must be before today)
+    const today = new Date();
+    const dob = new Date(formData.dob);
+    if (dob > today) {
+      setMessage("Date of birth must be before today.");
+      return false;
+    }
+
+    // Emergency contact name validation (only alphabets)
+    const emergencyNameRegex = /^[A-Za-z\s]+$/;
+    if (!emergencyNameRegex.test(formData.emergencyName)) {
+      setMessage("Emergency contact name must contain only alphabets.");
+      return false;
+    }
+
+    // Emergency contact phone validation (must be 10 digits)
+    if (!phoneRegex.test(formData.emergencyPhone)) {
+      setMessage("Emergency contact phone number must be 10 digits.");
+      return false;
+    }
+
+    return true;
+  };
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate passwords match
-    if (formData.password !== formData.confirmPassword) {
-      setMessage("Passwords do not match.");
+    // Validate the form before submitting
+    if (!validateForm()) {
       return;
     }
 
