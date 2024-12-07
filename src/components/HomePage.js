@@ -51,7 +51,7 @@ const HomePage = () => {
             <p>
             Explore tools and stories to support mental health for yourself or others.
             </p>
-            <a href="/explore-mental-health" className="mhf-button">
+            <a href="/Programmes" className="mhf-button">
               Learn More
             </a>
           </div>
@@ -75,7 +75,7 @@ const HomePage = () => {
                 Find out more about specific mental health problems, and things
                 that can have an effect on our mental health.
               </p>
-              <a href="/a-z-topics" className="learn-more-btn">Learn More</a>
+              <a href="/Programmes" className="learn-more-btn">Learn More</a>
             </div>
 
             <div className="carousel-item">
@@ -89,7 +89,7 @@ const HomePage = () => {
                 In-depth how-to guides about a wide range of mental health
                 problems, free to download and read.
               </p>
-              <a href="/how-to-guidelines" className="learn-more-btn">Learn More</a>
+              <a href="/PublicEngagement" className="learn-more-btn">Learn More</a>
             </div>
 
             <div className="carousel-item">
@@ -103,7 +103,7 @@ const HomePage = () => {
                 We want everyone to live mentally healthy lives. Luckily, there is
                 plenty of evidence for the things that can help.
               </p>
-              <a href="/looking-after" className="learn-more-btn">Learn More</a>
+              <a href="/Research" className="learn-more-btn">Learn More</a>
             </div>
 
             <div className="carousel-item">
